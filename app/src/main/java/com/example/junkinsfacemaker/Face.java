@@ -1,3 +1,4 @@
+// @author Alex Junkins
 package com.example.junkinsfacemaker;
 
 import java.util.Random;
