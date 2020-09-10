@@ -1,4 +1,9 @@
-// @author Alex Junkins
+/**
+ * FaceMaker Face Class
+ *
+ * @version sep 10 2020
+ * @author Alex Junkins
+ */
 package com.example.junkinsfacemaker;
 
 import java.util.Random;

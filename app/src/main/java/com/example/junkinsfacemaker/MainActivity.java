@@ -1,4 +1,10 @@
-// @author Alex Junkins
+/**
+ * FaceMaker Main Activity Class
+ *
+ * @version sep 10 2020
+ * @author Alex Junkins
+ */
+
 package com.example.junkinsfacemaker;
 
 import androidx.appcompat.app.AppCompatActivity;
