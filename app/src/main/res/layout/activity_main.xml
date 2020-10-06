@@ -22,11 +22,12 @@
             android:textSize="60dp"
             android:textStyle="bold|italic" />
 
-        <SurfaceView
+        <com.example.junkinsfacemaker.Face
             android:id="@+id/faceView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
 
         <LinearLayout
             android:id="@+id/buttonsLayout"
@@ -34,35 +35,37 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <RadioButton
                 android:id="@+id/hairButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:text="Button"
-                android:textSize="20dp"
-                tools:text="Hair" />
+                android:text="HAIR"
+                android:textSize="20sp"
+                tools:text="HAIR" />
 
-            <Button
+            <RadioButton
                 android:id="@+id/eyesButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Eyes"
-                android:textSize="20dp" />
+                android:text="EYES"
+                android:textSize="20sp" />
 
-            <Button
+            <RadioButton
                 android:id="@+id/skinButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Skin"
+                android:text="SKIN"
                 android:textSize="20dp" />
 
             <Button
                 android:id="@+id/randomFaceButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:text="Random"
                 android:textSize="20dp" />
@@ -119,6 +122,19 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/greenLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="GREEN"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:id="@+id/blueLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -131,18 +147,6 @@
                     android:textSize="35dp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/greenLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="GREEN"
-                    android:textSize="35dp"
-                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -160,7 +164,7 @@
                     android:scrollbarSize="10dp" />
 
                 <SeekBar
-                    android:id="@+id/blueSeekBar"
+                    android:id="@+id/greenSeekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
@@ -168,7 +172,7 @@
                     android:scrollbarSize="10dp" />
 
                 <SeekBar
-                    android:id="@+id/greenSeekBar"
+                    android:id="@+id/blueSeekBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
